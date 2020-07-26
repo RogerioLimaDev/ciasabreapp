@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard-Sabre de Luz</title>
+    <link rel="stylesheet" href="dashstyle.css" />
+  </head>
+  <body onload="dashboard()">
+    <h1 id="dashboard">
+      Dados enviados pela platéia
+    </h1>
+    <div class="dashData">
+      <h3>Platéia:<span id="dashUsers">0</span></h3>
+
+      <div class="btns">
+        <section id="btnFogo">
+          <form name="btnFogo" onsubmit="return estadoBtnFogo()">
+            <h2 class="btnLabel">Botão fogo</h2>
+            <input type="radio" id="ligar" name="estado" value="true" />
+            <label for="ligar">ligar</label><br />
+            <input type="radio" id="desligar" name="estado" value="false" />
+            <label for="desligar">desligar</label><br />
+          </form>
+          <br />
+          <button type="button" class="btn" onclick="acionarBtnFogo()">
+            Acionar</button
+          ><br />
+          <label class="labelStatus"
+            >status:<span id="btnStatusFogo"> aguardando</span></label
+          >
+        </section>
+
+        <section id="btnAlgodao">
+          <form name="btnAlgodao" onsubmit="return estadoBtnAlgodao()">
+            <h2 class="btnLabel">Botão algodão</h2>
+
+            <input type="radio" id="ligarAlgodao" name="estado" value="true" />
+            <label for="ligar">ligar</label><br />
+            <input
+              type="radio"
+              id="desligarAlgodao"
+              name="estado"
+              value="false"
+            />
+            <label for="desligar">desligar</label><br />
+          </form>
+          <br />
+
+          <button type="button" class="btn" onclick="acionarBtnAlgodao()">
+            Acionar
+          </button>
+          <br />
+
+          <label class="labelStatus"
+            >status:<span id="btnStatusAlgodao"> aguardando</span></label
+          >
+        </section>
+
+        <section id="btnAgua">
+          <form name="btnAgua" onsubmit="return estadoBtnAgua()">
+            <h2 class="btnLabel">Botão água</h2>
+
+            <input type="radio" id="ligarAgua" name="estado" value="true" />
+            <label for="ligar">ligar</label><br />
+
+            <input type="radio" id="desligarAgua" name="estado" value="false" />
+            <label for="desligar">desligar</label><br />
+          </form>
+          <br />
+
+          <button type="button" class="btn" onclick="acionarBtnAgua()">
+            Acionar</button
+          ><br />
+          <label class="labelStatus"
+            >status:<span id="btnStatusAgua"> aguardando</span></label
+          >
+        </section>
+      </div>
+    </div>
+    <div id="barraCheia"><span id="aviso">Atenção:</span> uma barra encheu</div>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/dash.js"></script>
+  </body>
+</html>
