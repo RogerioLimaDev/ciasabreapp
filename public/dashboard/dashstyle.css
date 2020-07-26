@@ -1,0 +1,83 @@
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  line-height: 1%;
+}
+
+h3 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1%;
+  color: white;
+}
+
+.dashData {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 30px;
+}
+
+.btnLabel {
+  font-size: 20px;
+  background-color: black;
+  margin-right: 50px;
+  height: 30px;
+  padding: 10px 10px 5px 10px;
+  color: white;
+}
+
+.labelStatus {
+  font-size: 20px;
+  color: gray;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-color: #DCDCDC;
+  border-style: solid;
+  width: 150px;
+  height: 50px;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: red;
+  border-color: #DCDCDC;
+}
+
+.btn:focus {
+  background-color: FireBrick;
+  border-color: #DCDCDC;
+}
+
+#barraCheia {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+  font-size:50px;
+  visibility: hidden;
+}
+
+#aviso {
+  color: yellow;
+}
