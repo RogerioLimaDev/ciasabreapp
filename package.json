@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"coffee-script": "*",
-		"express": "^4.12.4",
+		"express": "^4.17.3",
 		"socket.io": "*"
 	},
 	"engines": {
